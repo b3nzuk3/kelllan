@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2c697981ac.js" crossorigin="anonymous"></script>
+    
+    <title>Kellan Montessori</title>
+
+    <style>
+      body{
+        background-color: #9951FF;
+        color: #FAF7FF;
+        font-family: 'Sofia Sans', sans-serif;
+        font-size: large;
+      }
+    .carousel-inner > .item > img {
+      
+      width: 30%;
+    }
+    
+    /* DESCRIPTION SLIDE CSS */
+    div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+    
+  </style>
+    
+</head>
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container">
+    
+          <a class="navbar-brand" href="#"><img src="https://placeholder.pics/svg/150x50/070707-000000/D36D0D-ED0000/Omega" alt=""></a>
+    
+          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"> <a class="nav-link" href="#Contact-Us">Contact Us</a></li>
+          </ul>
+    
+    
+        </div>
+      </nav>
+    <div class="container">
+        {% block content %}{% endblock%}
+    </div>
+    <section style="margin-top: 3rem;">
+      <footer class="mt-auto" style="background-color: aliceblue;">
+        <div style="color:black" class="container ">
+          <h2 style="color:#C70A80; padding-top: 0.6rem;">Contact Us:</h2>
+          <div class="container" style="text-align:center; width: auto;">
+            <p>Nairobi Sailing Club, Langata</p>
+            <p>2368-00606, Sarit Centre</p>
+            <p><i class="fa-solid fa-phone" style="padding-right: 10px;"></i>0717 521 440</p>
+            <a href="https://www.instagram.com/kellanschool_official/"><i class="fa-brands fa-square-instagram fa-xl" style="color: black;"></i></a>
+          </div>
+          <footer style="color:#C70A80; padding-bottom:0.8rem;"><small>&copy 2023 all rights reserved</small></footer>
+          
+        </div>
+    </section>
+    
+        
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
